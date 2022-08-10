@@ -1,6 +1,6 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
-import * as BoostrapNavbar from "react-bootstrap/BoostrapNavbar";
+import { default as BoostrapNavbar } from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
 export default function Navbar() {

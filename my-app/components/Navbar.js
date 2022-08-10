@@ -1,15 +1,17 @@
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
+import * as BoostrapNavbar from "react-bootstrap/BoostrapNavbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 
 export default function Navbar() {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <BoostrapNavbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
+        <BoostrapNavbar.Brand href="#home">
+          React-Bootstrap
+        </BoostrapNavbar.Brand>
+        <BoostrapNavbar.Toggle aria-controls="responsive-BoostrapNavbar-nav" />
+        <BoostrapNavbar.Collapse id="responsive-BoostrapNavbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#features">Features</Nav.Link>
             <Nav.Link href="#pricing">Pricing</Nav.Link>
@@ -31,8 +33,8 @@ export default function Navbar() {
               Dank memes
             </Nav.Link>
           </Nav>
-        </Navbar.Collapse>
+        </BoostrapNavbar.Collapse>
       </Container>
-    </Navbar>
+    </BoostrapNavbar>
   );
 }
